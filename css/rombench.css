@@ -1,0 +1,48 @@
+:root {
+    font-display: swap;
+    -webkit-user-select: none;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #282828;
+        --content-color: #FFFFFF;
+    }
+    img {
+        filter: brightness(.8);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: all 0s!important;
+        transform: none!important;
+    }
+}
+.rombench-main {
+    background: var(--background-color);
+}
+.rombench-content {
+    color: var(--content-color);
+}
+.rombench-electron-appbar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+.rombench-electron-btn {
+    -webkit-app-region: no-drag;
+}
+.rombench-md2-btn {
+    border-radius: 5px 5px 5px 5px;
+}
+.rombench-md2-card {
+    border-radius: 8px 8px 8px 8px;
+}
+.rombench-md2-dialog {
+    border-radius: 8px 8px 8px 8px;
+}
+.rombench-md2-menu {
+    border-radius: 5px 5px 5px 5px;
+}
+.rombench-md2-font {
+    font-family: "Google Sans";
+    src: local("../fonts/GoogleSans-Regular.ttf");
+}
